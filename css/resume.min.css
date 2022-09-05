@@ -8,6 +8,14 @@
     padding-top:54px;
     color:#868e96;
 }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+ width: 75%;
+}
 .carousel {
     min-width: 20rem !important;
     margin-right: 2rem !important;
