@@ -9,8 +9,10 @@
     color:#868e96;
 }
 .carousel {
-    min-width: 20rem !important;
-    margin-right: 2rem !important;
+/*     min-width: 20rem !important; */
+/*     margin-right: 2rem !important; */
+    min-width: 20rem;
+    margin-right: 2rem;
   }
  /*@media (min-width:992px){*/
  @media only screen and (min-width:629px) {
