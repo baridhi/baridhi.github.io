@@ -848,9 +848,37 @@
         </div>
     </section>
  -->
-      <h3 class="subheading mb-0"><a class="nav-link js-scroll-trigger" href="https://baridhi.github.io/#about"><img src="img/scrolluparrow.svg" alt="" height="50">Scroll to top</a></h3>
-    </section></div>
+      <!-- <h3 class="subheading mb-0"><a class="nav-link js-scroll-trigger" href="https://baridhi.github.io/#about"><img src="img/scrolluparrow.svg" alt="" height="50">Scroll to top</a></h3>
+    </section></div> -->
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
     
+    <!-- 1. The Visitor Counter Display -->
+    <span style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 700; text-transform: uppercase; color: #868e96;">
+        Views: <span id="stats">...</span>
+    </span>
+
+    <!-- 2. Your existing Scroll to Top link -->
+    <h3 class="subheading mb-0">
+        <a class="nav-link js-scroll-trigger" href="https://baridhi.github.io/#about">
+            <img src="img/scrolluparrow.svg" alt="" height="50">Scroll to top
+        </a>
+    </h3>
+
+</div>
+
+<!-- 3. The GoatCounter Script (Place this anywhere at the bottom) -->
+<script>
+    var r = new XMLHttpRequest();
+    r.addEventListener('load', function() {
+        document.querySelector('#stats').innerText = JSON.parse(this.responseText).count
+    })
+    // replace  actual GoatCounter username
+    r.open('GET', 'https://baridhi.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+    r.send()
+</script>
+<script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+			
 
     <!-- Bootstrap core JavaScript -->
     <script src="./jquery.min.js.download"></script>
