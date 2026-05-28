@@ -306,7 +306,7 @@
         <button id="pgpt-close" aria-label="Close">✕</button>
       </div>
 
-      <div id="pgpt-offline">⚠️ API offline — make sure your laptop tunnel is running.</div>
+      <div id="pgpt-offline">⚠️ API offline — make sure BM's laptop tunnel is running.</div>
 
       <div id="pgpt-messages"></div>
 
